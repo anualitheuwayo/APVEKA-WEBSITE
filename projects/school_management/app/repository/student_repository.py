@@ -1,5 +1,4 @@
-# app/repository/student_repository.py
-"""Pure data-access for Student. No permission logic here — that's the service's job."""
+
 from typing import Optional, List
 from sqlalchemy.orm import Session
 

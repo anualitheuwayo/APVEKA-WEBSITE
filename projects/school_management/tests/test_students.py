@@ -1,4 +1,3 @@
-# tests/test_students.py
 def test_headmaster_can_register_student(client, headmaster_headers, class_a):
     r = client.post("/students", json={
         "admission_number": "ADM001", "full_name": "Iradukunda John", "class_id": class_a["id"],
@@ -33,7 +32,7 @@ def test_teacher_with_no_assignment_sees_no_students(client, headmaster_headers,
 
     r = client.get("/students", headers=teacher_headers)
     assert r.status_code == 200
-    assert r.json() == []  # teacher_headers is NOT assigned to class_a yet
+    assert r.json() == [] 
 
 
 def test_teacher_sees_only_students_in_assigned_class(
@@ -52,7 +51,7 @@ def test_teacher_sees_only_students_in_assigned_class(
     r = client.get("/students", headers=teacher_assigned_to_class_a)
     assert r.status_code == 200
     names = [s["full_name"] for s in r.json()]
-    assert names == ["In Class A"]  # only sees their own assigned class
+    assert names == ["In Class A"] 
 
 
 def test_headmaster_sees_all_students(client, headmaster_headers, class_a):
@@ -61,7 +60,7 @@ def test_headmaster_sees_all_students(client, headmaster_headers, class_a):
     }, headers=headmaster_headers)
     client.post("/students", json={
         "admission_number": "ADM008", "full_name": "Student Two",
-    }, headers=headmaster_headers)  # no class yet — still visible to headmaster
+    }, headers=headmaster_headers)  
 
     r = client.get("/students", headers=headmaster_headers)
     assert r.status_code == 200

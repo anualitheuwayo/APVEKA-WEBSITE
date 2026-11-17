@@ -1,4 +1,3 @@
-# app/core/security.py
 import os
 from datetime import datetime, timedelta
 from typing import Optional
@@ -9,7 +8,7 @@ from passlib.context import CryptContext
 
 load_dotenv()
 
-SECRET_KEY = os.getenv("SECRET_KEY", "insecure-dev-key-change-me")
+SECRET_KEY = os.getenv("SECRET_KEY")
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = int(os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES", "60"))
 

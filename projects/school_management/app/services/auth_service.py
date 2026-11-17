@@ -1,8 +1,4 @@
-# app/services/auth_service.py
-"""
-Business rules for accounts: who can register whom, how login works,
-and the one-time bootstrap for the very first headmaster.
-"""
+
 from fastapi import HTTPException
 
 from app.models import RoleEnum, User

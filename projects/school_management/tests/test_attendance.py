@@ -1,4 +1,4 @@
-# tests/test_attendance.py
+
 def test_teacher_can_mark_attendance_for_assigned_class(
     client, headmaster_headers, teacher_assigned_to_class_a, class_a
 ):
@@ -46,7 +46,7 @@ def test_invalid_attendance_status_rejected(client, headmaster_headers, class_a)
     r = client.post("/attendance", json={
         "student_id": student["id"], "class_id": class_a["id"], "status": "late",
     }, headers=headmaster_headers)
-    assert r.status_code == 422  # "late" isn't a valid AttendanceStatus anymore — remember, we cut it down to just present/absent
+    assert r.status_code == 422 
 
 
 def test_teacher_only_sees_attendance_for_their_own_class(
@@ -57,11 +57,11 @@ def test_teacher_only_sees_attendance_for_their_own_class(
     other_student = client.post("/students", json={
         "admission_number": "ADM104", "full_name": "Not Mine", "class_id": other_class["id"],
     }, headers=headmaster_headers).json()
-    # headmaster marks attendance in a class the teacher does NOT teach
+   
     client.post("/attendance", json={
         "student_id": other_student["id"], "class_id": other_class["id"], "status": "present",
     }, headers=headmaster_headers)
 
     r = client.get("/attendance", headers=teacher_assigned_to_class_a)
     assert r.status_code == 200
-    assert r.json() == []  # nothing shows up — it's not their class
+    assert r.json() == []  

@@ -1,7 +1,4 @@
-# app/services/class_service.py
-"""
-Business rules for classes and teacher assignments.
-"""
+
 from fastapi import HTTPException
 
 from app.schemas import SchoolClassCreate, SchoolClassUpdate, TeacherAssignmentCreate

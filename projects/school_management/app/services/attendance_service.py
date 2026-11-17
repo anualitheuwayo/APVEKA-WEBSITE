@@ -1,8 +1,4 @@
-# app/services/attendance_service.py
-"""
-Business rules for attendance: a teacher may only mark/view attendance
-for a class they're actually assigned to teach.
-"""
+
 from typing import Optional, List
 from datetime import date as date_type
 from fastapi import HTTPException

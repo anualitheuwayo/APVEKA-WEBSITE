@@ -1,4 +1,3 @@
-# tests/test_auth.py
 def test_bootstrap_creates_first_headmaster(client):
     r = client.post("/auth/bootstrap-headmaster", json={
         "username": "head1", "email": "head@school.com", "password": "pass123", "role": "headmaster",
@@ -51,4 +50,4 @@ def test_teacher_cannot_register_another_user(client, teacher_headers):
 
 def test_unauthenticated_request_rejected(client):
     r = client.get("/auth/me")
-    assert r.status_code == 401  # HTTPBearer returns 401 when no Authorization header is sent at all
+    assert r.status_code == 401  

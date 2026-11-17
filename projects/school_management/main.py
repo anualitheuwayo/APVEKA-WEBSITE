@@ -1,8 +1,7 @@
-# main.py
 from fastapi import FastAPI
 
 from database import Base, engine
-import app.models  # noqa: F401 — importing this registers every table on Base.metadata
+import app.models  
 
 from app.routers import (
     auth_router, students_router, classes_router,

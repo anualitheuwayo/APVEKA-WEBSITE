@@ -1,4 +1,3 @@
-# tests/test_teachers_and_classes.py
 def test_headmaster_can_list_teachers(client, headmaster_headers, teacher_headers):
     r = client.get("/teachers", headers=headmaster_headers)
     assert r.status_code == 200

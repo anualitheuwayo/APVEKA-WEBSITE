@@ -1,4 +1,3 @@
-# app/repository/class_assignment_repository.py
 """
 Pure data-access for ClassAssignment — the join table that says
 'this teacher teaches this class.' This is what makes Teacher <-> SchoolClass

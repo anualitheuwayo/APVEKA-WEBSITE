@@ -1,4 +1,4 @@
-# app/routers/classes.py
+
 from typing import List
 
 from fastapi import APIRouter, Depends, status

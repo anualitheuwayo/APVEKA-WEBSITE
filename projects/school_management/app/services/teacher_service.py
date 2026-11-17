@@ -1,8 +1,4 @@
-# app/services/teacher_service.py
-"""
-Business rules for teacher profiles, including the one lookup almost every
-other service needs: 'which classes does this logged-in user teach?'
-"""
+
 from typing import List
 
 from app.models import User

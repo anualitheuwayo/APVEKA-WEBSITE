@@ -1,5 +1,3 @@
-# app/repository/grade_repository.py
-"""Pure data-access for Grade — this is where a teacher's marks physically end up."""
 from typing import Optional, List
 from sqlalchemy.orm import Session
 

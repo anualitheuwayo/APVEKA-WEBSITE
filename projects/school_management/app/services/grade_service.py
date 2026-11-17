@@ -1,8 +1,4 @@
-# app/services/grade_service.py
-"""
-Business rules for grades — this is where a teacher's marks are actually
-captured and stored, with the same class-ownership rule as attendance.
-"""
+
 from typing import Optional, List
 from fastapi import HTTPException
 

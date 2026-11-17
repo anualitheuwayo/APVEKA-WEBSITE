@@ -1,5 +1,4 @@
-# app/repository/attendance_repository.py
-"""Pure data-access for Attendance."""
+
 from typing import Optional, List
 from datetime import date as date_type
 from sqlalchemy.orm import Session

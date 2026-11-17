@@ -1,8 +1,4 @@
-# tests/conftest.py
-"""
-Shared pytest fixtures. Each test gets a FRESH in-memory SQLite database
-(swapped in for Postgres) so tests never touch each other or your real DB.
-"""
+
 import os
 import sys
 

@@ -1,5 +1,4 @@
-# app/repository/class_repository.py
-"""Pure data-access for SchoolClass."""
+
 from typing import Optional, List
 from sqlalchemy.orm import Session
 

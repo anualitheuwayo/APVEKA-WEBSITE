@@ -1,8 +1,4 @@
-# app/repository/user_repository.py
-"""
-Pure data-access for User/Teacher. No business rules, no auth checks —
-just 'fetch this from the database' and 'save that to the database.'
-"""
+
 from typing import Optional
 from sqlalchemy.orm import Session
 

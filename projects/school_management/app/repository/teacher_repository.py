@@ -1,6 +1,4 @@
-# app/repository/teacher_repository.py
-"""Pure data-access for Teacher profiles — mostly lookups, since creation
-happens inside user_repository.create_teacher_profile as part of registration."""
+
 from typing import Optional, List
 from sqlalchemy.orm import Session
 

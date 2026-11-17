@@ -1,4 +1,3 @@
-# app/schemas/attendance.py
 from datetime import date
 from pydantic import BaseModel, ConfigDict, Field
 

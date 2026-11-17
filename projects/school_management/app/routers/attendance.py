@@ -1,4 +1,4 @@
-# app/routers/attendance.py
+
 from typing import List, Optional
 from datetime import date as date_type
 
