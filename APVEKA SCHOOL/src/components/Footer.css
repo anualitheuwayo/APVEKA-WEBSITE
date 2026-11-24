@@ -1,0 +1,14 @@
+footer{background:#0A1E44;color:rgba(255,255,255,.65);padding:72px 0 0;font-size:15px}
+.f-cols{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px;padding-bottom:56px}
+footer h4{color:#fff;font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:16px}
+footer ul{list-style:none;display:grid;gap:10px}
+footer a:hover{color:var(--sun)}
+footer .logo{color:#fff;margin-bottom:18px}
+.f-bottom{border-top:1px solid rgba(255,255,255,.1);padding:22px 0;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:13.5px}
+
+@media (max-width:960px){
+  .f-cols{grid-template-columns:1fr 1fr}
+}
+@media (max-width:600px){
+  .f-cols{grid-template-columns:1fr}
+}

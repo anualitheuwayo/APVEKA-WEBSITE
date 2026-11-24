@@ -1,0 +1,16 @@
+.levels{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.level{border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.level .ph{aspect-ratio:16/9}
+.level-body{padding:32px}
+.level-body .meta{font-size:13px;font-weight:600;color:var(--green);letter-spacing:.06em;text-transform:uppercase}
+.level-body h3{font-size:28px;margin:6px 0 12px}
+.level-body p{color:var(--muted);margin-bottom:18px}
+.level-body ul{list-style:none;display:grid;gap:8px;font-size:15px}
+.level-body li{padding-left:18px;position:relative}
+.level-body li::before{content:"";position:absolute;left:0;top:10px;width:6px;height:6px;border-radius:50%;background:var(--sun)}
+.classes{font-size:14px;color:var(--ink);margin-bottom:16px}
+.classes b{font-weight:600}
+
+@media (max-width:960px){
+  .levels{grid-template-columns:1fr;gap:48px}
+}

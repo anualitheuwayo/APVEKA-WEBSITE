@@ -1,0 +1,11 @@
+.intro-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:48px}
+.intro-item{border-top:2px solid var(--line);padding-top:26px}
+.intro-item:nth-child(1){border-color:var(--navy)}
+.intro-item:nth-child(2){border-color:var(--green)}
+.intro-item:nth-child(3){border-color:var(--sun)}
+.intro-item h3{font-size:24px;margin-bottom:10px}
+.intro-item p{color:var(--muted)}
+
+@media (max-width:960px){
+  .intro-grid{grid-template-columns:1fr;gap:40px}
+}

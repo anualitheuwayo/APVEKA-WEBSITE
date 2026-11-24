@@ -1,0 +1,4 @@
+.logo{display:flex;align-items:center;gap:12px;color:#fff}
+.logo-mark{width:40px;height:40px;border-radius:50%;background:var(--sun);display:grid;place-items:center;font-family:'DM Serif Display';color:var(--navy);font-size:20px}
+.logo b{font-family:'DM Serif Display';font-weight:400;font-size:22px;letter-spacing:.04em;display:block;line-height:1}
+.logo small{font-size:11px;letter-spacing:.12em;text-transform:uppercase;opacity:.8}

@@ -1,0 +1,9 @@
+.c-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:72px}
+.c-list{display:grid;gap:26px;margin-top:10px}
+.c-list h4{font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--green);margin-bottom:4px}
+.c-list p{font-size:16.5px}
+.map{min-height:420px;border-radius:6px;overflow:hidden}
+
+@media (max-width:960px){
+  .c-grid{grid-template-columns:1fr;gap:48px}
+}

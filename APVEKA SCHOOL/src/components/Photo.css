@@ -1,0 +1,4 @@
+/* Image box: grey placeholder until a photo is added */
+.ph{background:#D9DDE4 linear-gradient(135deg,#D9DDE4,#C9CFD9);position:relative;overflow:hidden;background-size:cover;background-position:center}
+.ph::after{content:attr(data-label);position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:13px;color:#6B7383;letter-spacing:.04em;text-align:center;padding:12px}
+.ph.has-img::after{display:none}
